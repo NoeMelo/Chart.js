@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./vendors/bootstrap-4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./vendors/font-awesome/css/font-awesome.min.css">
+    <title>Line Chart Example</title>
+  </head>
+  <body>
+
+
+<div class="principal wrapper">
+  <div class="card text-center">
+
+    <div class="card-header">
+      <h5>
+Series de tiempo
+      </h5>
+
+      <!-- <a href="#" class="icon_home"> <i class="fa fa-home"> </i></a> -->
+
+    </div>
+
+
+    <div class="card-body">
+      <h5 class="card-title">
+      </h5>
+      <canvas id="lineChart" width="300" height="150"> </canvas>
+    </div>
+
+
+
+
+    <div class="card-footer text-muted">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <button type="button" class="btn btn-outline-info" disabled="">Zoom</button>
+
+        <label class="btn btn-info" id="zoom_1">
+          <input type="radio" name="options"  id="option1" autocomplete="off"> 3M
+        </label>
+        <label class="btn btn-info" id="zoom_2">
+          <input type="radio" name="options" id="option2" autocomplete="off"> 6M
+        </label>
+        <label class="btn btn-info" id="zoom_3">
+          <input type="radio" name="options" id="option3" autocomplete="off"> 1Y
+        </label>
+        <label class="btn btn-info" id="zoom_4">
+          <input type="radio" name="options" id="option4" autocomplete="off"> 5Y
+        </label>
+        <label class="btn btn-info" id="zoom_5">
+          <input type="radio" name="options" id="option5" autocomplete="off" > 10Y
+        </label>
+        <label class="btn btn-info active" id="zoom_max">
+          <input type="radio" name="options" id="maximo" autocomplete="off" > MAX
+        </label>
+
+        <!-- <label class="btn btn-info active">
+          <input type="radio" name="options" id="copia" autocomplete="off"> copia
+        </label>
+        <label class="btn btn-info active">
+          <input type="radio" name="options" id="back" autocomplete="off"> back
+        </label> -->
+
+
+      </div>
+      <!-- <button type="button" id="save_image" class="btn btn-primary float-right bg-flat-color-1"><i class="fa fa-cloud-download"></i></button> -->
+      <a id="download" download="BcrpChart.jpg" href="" class="btn btn-primary float-right bg-flat-color-1" title="Descargar Gráfico"><i class="fa fa-download"></i></a>
+    </div>
+
+  </div>
+</div>
+
+  </body>
+  <script type="text/javascript" src="./vendors/node_modules/chart.js/dist/chart.bundle.js"></script>
+  <script type="text/javascript" src="./assets/js/linechart.js"></script>
+  <!-- <script src="./bootstrap-4.4.1/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./bootstrap-4.4.1/jquery/jquery-3.4.1.js" charset="utf-8"></script> -->
+</html>

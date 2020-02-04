@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+}
+.wrapper{
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+.principal{
+  width: auto;
+}
+.icon_home {
+  font-size: 40px;
+}
